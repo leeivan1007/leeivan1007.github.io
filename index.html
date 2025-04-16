@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivan Lee - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-  <h1>Hello, I'm Ivan!</h1>
-  <p>This is my personal GitHub Pages site.</p>
+  <div class="container">
+    <!-- 左側側欄 -->
+    <aside class="sidebar">
+      <img class="avatar" src="./image.jpg" alt="Ivan's Avatar" />
+      <h1>Ivan Lee</h1>
+      <p></p>
+      <!-- <p>AI Engineer</p> -->
+    
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publication">Publication</a>
+      </nav>
+    
+      <div class="contact-info">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:leeivan1007@gmail.com">leeivan1007@gmail.com</a></p>
+        <p><i class="fas fa-file-alt"></i> <a href="https://drive.google.com/file/d/1OV2ZikQ9Cp_AFfRxWFipvUPEaYz0f4kS/view?usp=sharing" target="_blank">Resume</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/leeivan1007" target="_blank">GitHub</a></p>
+      </div>
+      
+    </aside>
+    
+
+    <!-- 右側主內容 -->
+    <main class="main-content">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Ivan, an AI engineer developing application in computer vision, LLM, and multi-agent systems.</p>
+      </section>
+
+      <section id="publication">
+        <h2>Publication</h2>
+        <ul class="publication-list">
+          <li><strong>Thesis:</strong> Dynamically Searching and Classifying Images by Using Neural Networks and Reinforcement Learning with the Grid Table <br>
+            <em>(TAAI 2024, Oral paper)</em>
+          </li>
+        </ul>
+      </section>
+      
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <p><strong>PC DIY Chatbot</strong>: (Third Place, Taiwan Artificial Intelligence Association LLM Competition, 2024)</p>
+          <ul>
+            <li>Developed a chatbot to assist users in querying PC component questions.</li>
+            <li>PC DIY model (base: LLaMA-3-8B): <a href="https://huggingface.co/IvanLee/PC_DIY_llama_3_8b/tree/main" target="_blank">huggingface link</a></li>
+          </ul>
+          
+          <p><strong>OptAgents</strong></p>
+          <ul>
+            <li>An auto optimization agents framework follows Pytorch-style.</li>
+            <li>Project link: <a href="https://github.com/leeivan1007/OptAgents" target="_blank">github link</a></li>
+          </ul>
+        </div>
+      </section>
+      
+    </main>
+  </div>
 </body>
 </html>
